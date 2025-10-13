@@ -1,7 +1,6 @@
 package U1T6_Return;
 
 // Rectangle class definition
-import java.util.Scanner;
 
 public class Rectangle {
 

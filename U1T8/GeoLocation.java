@@ -1,6 +1,6 @@
 package U1T8;
 
-public class GetLocation {
+
     public class GeoLocation {
 
 
@@ -25,4 +25,4 @@ public class GetLocation {
    }
 }
 
-}
+

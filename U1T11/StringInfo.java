@@ -14,7 +14,7 @@ public class StringInfo {
         } else {
             System.out.println (word2 + " is longer"); 
         }
-
+        
         int halfLen1 = (int) ((word1.length() / 2) + 0.5); 
         System.out.println ("First half: " + word1.substring(0, halfLen1)); 
         System.out.println ("Second half: " + word1.substring(halfLen1)); 

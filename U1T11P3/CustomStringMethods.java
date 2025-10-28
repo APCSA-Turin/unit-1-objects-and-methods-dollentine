@@ -24,6 +24,41 @@ public class CustomStringMethods {
         return orig.substring(1) + letter + "ay";        
      }
 
+      public String removeCharacter(String myString, int removeIdx) {
+         if (removeIdx < 0 || removeIdx >= myString.length()) {
+         return myString; 
+       } 
+        String newString = myString.substring(0, removeIdx) + myString.substring(removeIdx + 1); 
+        return newString; 
+     }
+
+      public String insertAt(String orig, String insertText, String searchStr) {
+        if (orig.indexOf(searchStr) == -1) {
+         return orig + insertText; 
+        }
+        int index = orig.indexOf(searchStr); 
+        return orig.substring(0, index) + insertText + orig.substring(index); 
+     }
+      
+      public String endUp(String myString, int numToCap){
+         if (numToCap >= myString.length()) {
+           return myString.toUpperCase();
+       }
+        
+         int len = myString.length() - numToCap;
+         String half1 = myString.substring(0, len); 
+         String half2 = myString.substring(len).toUpperCase(); 
+         return half1 + half2; 
+     } 
+      public String yellOrWhisper (String myString) {
+         String firstLetter = myString.substring(0,1); 
+         if (firstLetter.equals(firstLetter.toUpperCase())) {
+            return myString.toUpperCase(); 
+         } else {
+            return myString.toLowerCase(); 
+         }
+      }
+ 
 }
 
 
